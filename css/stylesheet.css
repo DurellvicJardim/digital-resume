@@ -1,0 +1,222 @@
+/*HEADER*/
+.header{
+    margin: 0px;
+    width: 100%;
+    min-width: 150px;
+    font-family: Roboto;
+    text-align: center;
+    color: azure;
+    background-color: rgb(102, 243, 212);
+    background-image: url(../images/background.jpg);
+    padding: 10px;
+}
+
+/*BODY*/
+body{
+    margin: 0px;
+    width: 100%;
+    min-width: 150px;
+    font-family: Roboto;
+    background-color: rgb(139, 233, 213);
+    scroll-behavior:smooth;
+}
+
+/*SIDEBAR*/
+.sidebar{
+    margin: 0px;
+    font-family: Roboto;
+    text-align: left;
+    background-color: rgb(127, 247, 227);
+}
+
+.profileimage{
+    width: 95%;
+    border-radius: 50%;
+    padding: 0px;
+    display: inline-flex;
+    float: left;
+}
+
+.menu{
+    margin: 0px;
+    width: 100%;
+    display: inline-flex;
+    background-image: url(../images/background.jpg);
+}
+
+.menulist{
+    text-align: left;
+    text-decoration-style: none;
+    list-style-type: none;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.links{
+    font-family: Roboto;
+    margin: 0px;
+    color: black;
+    text-decoration: none;
+}
+
+a.links:hover{
+    color: rgb(49, 241, 232);
+}
+
+/*CONTENT*/
+.wrapper{
+    display: inline-flex;
+    background-color: rgb(139, 233, 213);
+}
+
+.content{
+    width: 100%;
+    margin: 5px;
+}
+
+.list{
+    color: black;
+    list-style-type: none;
+    line-height: 1.4;
+    font-weight: 500;
+}
+
+.list li:first-child{
+    font-weight: 600;
+}
+
+.skills{
+    width: 25%;
+}
+
+section#interests,#skills{
+    float: left;
+    width: 50%;
+}
+
+section#experience{
+    clear: both;
+    width: 100%;
+}
+
+/*FOOTER*/
+
+footer{
+    width: 100%;
+    font-family: Roboto;
+    color: azure;
+    text-align: center;
+    background-image: url(../images/background.jpg);
+    padding: 6px;
+}
+
+/*ANIMATION*/
+@keyframes socials{
+    0%{filter: sepia(0px);
+      transform: translateY(0px);}
+    25%{filter:sepia(10px);
+      transform: translateX(-5px);}
+    50%{filter: sepia(15px);
+      transform: translateY(-5px);}
+    75%{filter: sepia(10px);
+      transform: translateX(5px);}
+    100%{filter: sepia(5px);
+      transform: translateY(0px);}
+}
+
+#socials:hover{
+    animation-name: socials;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    filter: drop-shadow(5px 5px 5px rgb 0, 145, 145) blur(0.5px);
+    animation-duration: infinite;
+    rotate: 90deg;
+}
+
+/*MEDIA QUERIES*/
+
+@media screen and (max-width: 768px){
+
+    .header{
+        display: inline-flex;
+    }
+
+    .sidebar{
+        display: inline-block;
+        width: 30%;
+    }
+
+    .content{
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .skills{
+        width: 30%;
+    }
+
+    section#interests{
+        float: left;
+        width: 100%;
+    }
+
+    section#skills{
+        clear: both;
+    }
+
+    footer{
+        display: inline-block;
+        padding: 0px;
+    }
+    
+}
+
+
+@media screen and (max-width: 540px){
+
+    .header{
+        display: block;
+    }
+
+    .sidebar{
+        display: block;
+        width: 30%;
+        float: left;
+    }
+
+    .profileimage{
+        margin-top: -25%;
+    }
+
+    .menulist{
+        line-height: 1.2;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    body{
+        display: block;
+    }
+
+    .skills{
+        width: 30%;
+    }
+
+    section#interests{
+        float: left;
+        width: 100%;
+    }
+
+    section#skills{
+        clear: both;
+    }
+
+    footer{
+        display: block;
+        padding: 0px;
+    }
+    
+}
